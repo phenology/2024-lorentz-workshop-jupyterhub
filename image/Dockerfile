@@ -11,3 +11,5 @@ RUN mamba env update --name base --file /tmp/environment.yml &&\
 RUN Rscript -e 'devtools::install_github("bluegreen-labs/phenor", upgrade="never")'
 RUN Rscript -e 'devtools::install_github("ropensci/rppo", upgrade="never")'
 RUN Rscript -e 'install.packages(c("daymetr", "MODISTools", "phenocamr", "rnpn"), repos = "http://cran.us.r-project.org")'
+
+EXPOSE 8888
