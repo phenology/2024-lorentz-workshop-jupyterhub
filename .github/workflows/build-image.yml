@@ -29,7 +29,6 @@ jobs:
         username: ${{ secrets.GHCR_USERNAME }}
         password: ${{ secrets.GITHUB_TOKEN }}  
 
-
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
