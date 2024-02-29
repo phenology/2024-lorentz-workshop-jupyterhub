@@ -1,0 +1,74 @@
+name: springtime
+channels:
+  - conda-forge
+  - r
+dependencies:
+  - python =3.10
+# Jupyter and other packages for the image
+  - jupyterhub =4.0.2
+  - jupyterlab >=4
+  - jupyterlab-git
+# pip dependencies
+  - pip
+  - pip:
+    - dcachefs  # access Daymet data on dCache
+    - springtime[extras]
+# R dependencies
+  - r-base >=4.2
+  - r-BayesianTools
+  - r-ape
+  - r-bit
+  - r-bit64
+  - r-changepoint
+  - r-class
+  - r-curl
+  - r-devtools
+  - r-doparallel
+  - r-expm
+  - r-filelock
+  - r-foreach
+  - r-gap
+  - r-GenSA
+  - r-getpass
+  - r-ggplot2
+  - r-gmm
+  - r-httr
+  - r-idpmisc
+  - r-jsonlite
+  - r-keyring
+  - r-kernsmooth
+  - r-lme4
+  - r-lmtest
+  - r-magrittr
+  - r-minqa
+  - r-msm
+  - r-ncdf4
+  - r-nloptr
+  - r-proxy
+  - r-qgam
+  - r-raster
+  - r-readr
+  - r-reshape2
+  - r-rcppeigen
+  - r-rgdal
+  - r-rgenoud
+  - r-rnpn
+  - r-rvest
+  - r-sf
+  - r-snow
+  - r-s2
+  - r-sp
+  - r-sodium
+  - r-survival
+  - r-terra
+  - r-tibble
+  - r-tidyr
+  - r-tmvtnorm
+  - r-tzdb
+  - r-units
+  - r-wk
+  - r-xml2
+  - r-udunits2
+  - r-uuid
+  - r-vroom
+  - r-zoo
