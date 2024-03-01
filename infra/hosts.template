@@ -1,0 +1,4 @@
+workspaces:
+  hosts:
+    XXX.src.surf-hosted.nl:
+    YYY.src.surf-hosted.nl:

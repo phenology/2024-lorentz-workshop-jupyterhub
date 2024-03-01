@@ -1,0 +1,6 @@
+---
+users:
+  - usr: USER1 
+    pwd: PASS1
+  - usr: USER2
+    pwd: PASS2

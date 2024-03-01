@@ -1,0 +1,16 @@
+- name: Add users to JupyterHub 
+  hosts: workspaces
+  become: yes
+  handlers:
+    - name: JupyterHub handlers
+      import_tasks: roles/jupyter/handlers/main.yml  
+  tasks:
+    - include_vars: users.yml
+
+    - name: Add users
+      user:
+        name: "{{ item.usr }}"
+        password: "{{ item.pwd | password_hash('sha512', 'salt') }}"
+      loop: "{{ users }}"
+      notify: restart jupyterhub 
+
