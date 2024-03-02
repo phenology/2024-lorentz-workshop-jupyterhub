@@ -20,6 +20,7 @@ dependencies:
   - r-bit
   - r-bit64
   - r-changepoint
+  - r-chillr
   - r-class
   - r-curl
   - r-devtools
@@ -37,6 +38,7 @@ dependencies:
   - r-jsonlite
   - r-keyring
   - r-kernsmooth
+  - r-leaflet
   - r-lme4
   - r-lmtest
   - r-magrittr
